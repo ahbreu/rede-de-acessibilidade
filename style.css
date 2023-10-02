@@ -1,0 +1,48 @@
+/* Estilos para a página */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.book {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo para páginas */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.nav-button {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button,
+.home-button {
+    display: none; /* Botões "Anterior" e "Tela Inicial" inicialmente ocultos */
+}
+
+.next-button:disabled,
+.prev-button:disabled {
+    color: gray;
+    cursor: not-allowed;
+}
