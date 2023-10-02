@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var currentPage = 0;
-    var totalPages = 9; // Total de páginas, incluindo a página 0
+    var totalPages = 10; // Total de páginas, incluindo a página 0
 
     function showPage(pageNumber) {
         var pages = document.querySelectorAll('.page');
@@ -14,27 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         currentPage = pageNumber;
-        updateNavigationButtons();
-    }
-
-    function updateNavigationButtons() {
-        var prevButton = document.querySelector('.prev-button');
-        var homeButton = document.querySelector('.home-button');
-        var nextButton = document.querySelector('.next-button');
-
-        // Habilita ou desabilita o botão "Anterior"
-        if (currentPage === 0) {
-            prevButton.disabled = true;
-        } else {
-            prevButton.disabled = false;
-        }
-
-        // Habilita ou desabilita o botão "Próxima"
-        if (currentPage === totalPages) {
-            nextButton.disabled = true;
-        } else {
-            nextButton.disabled = false;
-        }
     }
 
     showPage(0); // Mostra a página inicialmente
