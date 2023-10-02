@@ -25,10 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Habilita ou desabilita o botão "Anterior"
         if (currentPage === 0) {
             prevButton.disabled = true;
-            homeButton.style.display = 'none';
         } else {
             prevButton.disabled = false;
-            homeButton.style.display = 'block';
         }
 
         // Habilita ou desabilita o botão "Próxima"
