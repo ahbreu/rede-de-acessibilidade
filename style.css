@@ -36,13 +36,9 @@ body {
     cursor: pointer;
 }
 
-.prev-button,
+/* Remova prev-button e next-button do CSS, pois agora usaremos apenas nav-button */
 .home-button {
-    display: none; /* Botões "Anterior" e "Tela Inicial" inicialmente ocultos */
+    display: none; /* Botão "Tela Inicial" inicialmente oculto */
 }
 
-.next-button:disabled,
-.prev-button:disabled {
-    color: gray;
-    cursor: not-allowed;
-}
+/* Estilos adicionais podem ser inseridos aqui */
